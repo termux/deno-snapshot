@@ -9,8 +9,8 @@ source $_SCRIPTDIR/common-files/termux_download.sh
 : ${_TMP_DIR:=$_SCRIPTDIR/tmp}
 : ${_BUILD_DIR:=$_SCRIPTDIR/build}
 
-DENO_VERSION="2.2.13"
-DENO_SHA256SUM="ed6c40be562394aa72251c3bd77432374e328cf0024226daadaba1b3486c2a68"
+DENO_VERSION="2.4.5"
+DENO_SHA256SUM="a6bba626d08813c114bfcc862e69fd7202eecda97df9f349abf6cc4e38fe4e40"
 
 __prepare_env() {
 	sudo apt update
