@@ -50,7 +50,7 @@ __apply_patches() {
 
 __build_snaphost() {
 	cd "$_TMP_DIR/deno-src-$DENO_VERSION/"
-	cargo build --release
+	cargo build --release --lib --manifest-path ./cli/snapshot/Cargo.toml
 	find ./target -type f -name "*SNAPSHOT.bin" -exec cp '{}' $_BUILD_DIR/$OVERRIDE_TARGET \;
 	cd -
 }
